@@ -1,0 +1,36 @@
+// src/components/Contact/Contact.tsx
+import React from "react";
+import styles from "./Contact.module.css";
+
+const Contact: React.FC = () => (
+  <section id="contact" className={styles.contact}>
+    <h2 className={styles.title}>Contact Us</h2>
+    <ul className={styles.list}>
+      <li className={styles.listItem}>
+        Email:{" "}
+        <a href="mailto:info@myservicesco.com" className={styles.link}>
+          info@myservicesco.com
+        </a>
+      </li>
+      <li className={styles.listItem}>
+        Phone:{" "}
+        <a href="tel:+1234567890" className={styles.link}>
+          +1 (234) 567-890
+        </a>
+      </li>
+      <li className={styles.listItem}>
+        Facebook:{" "}
+        <a
+          href="https://facebook.com/myservicesco"
+          className={styles.link}
+          target="_blank"
+          rel="noreferrer"
+        >
+          fb.com/myservicesco
+        </a>
+      </li>
+    </ul>
+  </section>
+);
+
+export default Contact;

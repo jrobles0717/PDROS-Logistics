@@ -1,0 +1,20 @@
+/* src/components/Contact/Contact.module.css */
+.contact {
+  padding: 2rem;
+  background: #fafafa;
+}
+.title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.list {
+  list-style: none;
+  padding: 0;
+}
+.listItem {
+  margin: 0.5rem 0;
+}
+.link {
+  color: #007bff;
+  text-decoration: none;
+}
