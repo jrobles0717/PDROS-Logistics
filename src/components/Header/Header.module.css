@@ -4,15 +4,46 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #000000; /* Black background for modern look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between logo and text */
+}
+
+.logo {
+  height: 50px; /* Adjust logo size */
+  width: auto;
+}
+
+.companyName {
+  font-size: 1.5rem; /* Slightly larger font size */
+  font-weight: bold;
+  color: #ffffff; /* White text for contrast */
+}
+
 .navList {
   display: flex;
-  gap: 1rem;
+  gap: 2rem; /* Space between navigation links */
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
 .link {
-  color: #333;
   text-decoration: none;
+  font-size: 1rem;
   font-weight: 500;
+  color: #00ff00; /* Bright green for links */
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #00cc00; /* Darker green on hover */
 }

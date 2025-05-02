@@ -4,7 +4,11 @@ import styles from "./Footer.module.css";
 
 const Footer: React.FC = () => (
   <footer className={styles.footer}>
-    © {new Date().getFullYear()} MyServicesCo. All rights reserved.
+    <div className={styles.container}>
+      <p>
+        © {new Date().getFullYear()} PDROS Logistics LLC. All rights reserved.
+      </p>
+    </div>
   </footer>
 );
 

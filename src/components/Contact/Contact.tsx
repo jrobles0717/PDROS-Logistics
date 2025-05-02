@@ -14,19 +14,19 @@ const Contact: React.FC = () => (
       </li>
       <li className={styles.listItem}>
         Phone:{" "}
-        <a href="tel:+1234567890" className={styles.link}>
-          +1 (234) 567-890
+        <a href="tel:+16892877076" className={styles.link}>
+          +1 (689) 287-7076
         </a>
       </li>
       <li className={styles.listItem}>
         Facebook:{" "}
         <a
-          href="https://facebook.com/myservicesco"
+          href="https://www.facebook.com/profile.php?id=61575080154489"
           className={styles.link}
           target="_blank"
           rel="noreferrer"
         >
-          fb.com/myservicesco
+          fb.com/pdros-logistics
         </a>
       </li>
     </ul>
