@@ -61,6 +61,7 @@
 
 .primaryBtn:hover {
   background-color: #00cc00; /* Darker green on hover */
+  color: #ffffff; /* Keep text color white on hover */
 }
 
 .secondaryBtn {

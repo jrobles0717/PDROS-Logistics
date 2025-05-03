@@ -12,8 +12,10 @@ const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logoContainer}>
-        <img src={logo} alt="PDROS Logistics Logo" className={styles.logo} />
-        <span className={styles.companyName}>PDROS Logistics LLC</span>
+        <a href="#home" className={styles.logoLink}>
+          <img src={logo} alt="PDROS Logistics Logo" className={styles.logo} />
+          <span className={styles.companyName}>PDROS Logistics LLC</span>
+        </a>
       </div>
       <nav className={styles.nav}>
         <ul className={styles.navList}>

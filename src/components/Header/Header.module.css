@@ -14,19 +14,27 @@
 .logoContainer {
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* Space between logo and text */
+  gap: 1rem; /* Increased gap between logo and company name */
+}
+
+.logoLink {
+  display: flex; /* Flexbox to align logo and company name */
+  align-items: center; /* Center items vertically */
+  text-decoration: none; /* Remove underline from link */
+  gap: 0.5rem;
+  cursor: pointer; /* Change cursor to pointer */
 }
 
 .logo {
-  height: 50px; /* Adjust logo size */
+  height: 40px; /* Adjust logo size for a more compact look */
   width: auto;
 }
 
 .companyName {
-  font-size: 1.8rem; /* Default font size for larger screens */
-  font-weight: 600; /* Semi-bold for emphasis */
+  font-size: 1.4rem; /* Reduced font size for a modern look */
+  font-weight: 500; /* Less bold for a cleaner appearance */
   color: #ffffff; /* White text for contrast */
-  letter-spacing: 1px; /* Slightly increased letter spacing */
+  letter-spacing: 0.5px; /* Slightly reduced letter spacing */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle text shadow for depth */
   transition: color 0.3s ease; /* Smooth color transition */
 }
@@ -38,13 +46,13 @@
 /* Responsive font size adjustments */
 @media (max-width: 768px) {
   .companyName {
-    font-size: 1.5rem; /* Smaller font size for tablets and smaller screens */
+    font-size: 1.2rem; /* Smaller font size for tablets and smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   .companyName {
-    font-size: 1.2rem; /* Even smaller font size for mobile devices */
+    font-size: 1rem; /* Even smaller font size for mobile devices */
   }
 }
 
@@ -64,6 +72,7 @@
   transition: color 0.3s ease;
   display: flex; /* Flexbox for icon and text alignment */
   align-items: center; /* Center items vertically */
+  cursor: pointer; /* Change cursor to pointer */
 }
 
 .link:hover {
