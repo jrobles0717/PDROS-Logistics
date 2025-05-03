@@ -1,45 +1,117 @@
 /* src/components/Hero/Hero.module.css */
 .hero {
   display: flex;
-  padding: 3rem 2rem;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full-screen height */
   background-color: #000000; /* Black background */
   color: #ffffff; /* White text */
+  padding: 0 2rem;
+  width: 100vw; /* Full width */
+  box-sizing: border-box; /* Include padding in width calculation */
+  position: relative; /* Ensure proper stacking */
+}
+
+.content {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
   gap: 2rem;
 }
 
 .text {
-  max-width: 500px;
+  flex: 1;
+  max-width: 600px;
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: bold;
   margin-bottom: 1rem;
-  color: #00ff00; /* Green title */
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #00ff00; /* Green highlight */
 }
 
 .subtitle {
-  font-size: 1.125rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
   color: #cccccc; /* Light gray for subtitle */
 }
 
-.btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background: #00ff00; /* Green button */
-  color: #000000; /* Black text */
-  border-radius: 4px;
-  text-decoration: none;
-  transition: background 0.3s ease;
+.ctaContainer {
+  display: flex;
+  gap: 1rem;
 }
 
-.btn:hover {
-  background: #00cc00; /* Darker green on hover */
+.primaryBtn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #00ff00; /* Green button */
+  color: #000000; /* Black text */
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.primaryBtn:hover {
+  background-color: #00cc00; /* Darker green on hover */
+}
+
+.secondaryBtn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  color: #00ff00; /* Green text */
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid #00ff00; /* Green border */
+  border-radius: 4px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.secondaryBtn:hover {
+  background-color: #00ff00; /* Green background */
+  color: #000000; /* Black text */
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image {
-  width: 400px;
-  object-fit: cover;
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for modern look */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column; /* Stack text and image vertically */
+    text-align: center;
+  }
+
+  .imageContainer {
+    margin-top: 2rem;
+  }
+
+  .title {
+    font-size: 2.5rem; /* Slightly smaller font size for smaller screens */
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
 }
