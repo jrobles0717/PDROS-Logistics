@@ -1,0 +1,8 @@
+/* src/components/Footer/Footer.module.css */
+.footer {
+  padding: 1rem;
+  text-align: center;
+  background: #000000; /* Black background */
+  color: #ffffff; /* White text */
+  font-size: 0.875rem;
+}

@@ -1,0 +1,126 @@
+/* src/components/Services/Services.module.css */
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto; /* Allow the section to grow dynamically */
+  min-height: 100vh; /* Ensure it takes at least full screen height */
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White text */
+  padding: 2rem;
+  padding-top: 80px; /* Add padding to the top to offset the navbar */
+  width: 100vw; /* Full width */
+  box-sizing: border-box; /* Include padding in width calculation */
+  position: relative; /* Ensure proper stacking */
+  margin-top: 0; /* Reset margin */
+}
+
+.content {
+  max-width: 1200px; /* Limit content width for larger screens */
+  width: 100%; /* Allow content to take full width */
+  text-align: center; /* Center text for better appearance */
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #00ff00; /* Green title */
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #cccccc; /* Light gray subtitle for contrast */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Responsive grid */
+  gap: 1.5rem;
+  width: 100%; /* Ensure grid takes full width */
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.item:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Black overlay with transparency */
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+}
+
+.item:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.overlayText {
+  color: #ffffff; /* White text */
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 862px) {
+  .title {
+    font-size: 2rem; /* Smaller title for smaller screens */
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .grid {
+    gap: 1rem; /* Reduce gap between grid items */
+  }
+
+  .overlayText {
+    font-size: 1rem; /* Smaller overlay text */
+  }
+
+  .content {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .services {
+    height: auto; /* Allow the section to grow dynamically */
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .hero {
+    height: auto; /* Allow the Hero section to grow dynamically */
+  }
+}

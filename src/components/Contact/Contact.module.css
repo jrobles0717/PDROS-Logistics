@@ -1,0 +1,61 @@
+/* src/components/Contact/Contact.module.css */
+.contact {
+  padding: 3rem 2rem; /* Increased padding for better spacing */
+  background-color: #000000; /* Black background for modern look */
+  color: #ffffff; /* White text for contrast */
+  text-align: center; /* Center text alignment */
+}
+
+.title {
+  font-size: 2.5rem; /* Larger title for emphasis */
+  margin-bottom: 0.5rem;
+  color: #00ff00; /* Green title */
+}
+
+.subtitle {
+  font-size: 1.25rem; /* Subtitle size */
+  margin-bottom: 2rem; /* Space below subtitle */
+  color: #cccccc; /* Light gray for contrast */
+}
+
+.contactInfo {
+  display: flex; /* Flexbox for card layout */
+  justify-content: center; /* Center cards */
+  gap: 2rem; /* Space between cards */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.card {
+  background-color: #1a1a1a; /* Dark gray background for cards */
+  border-radius: 8px; /* Rounded corners */
+  padding: 2rem; /* Padding inside cards */
+  width: 250px; /* Fixed width for cards */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.icon {
+  font-size: 2rem; /* Larger icon size */
+  margin-bottom: 1rem; /* Space below icon */
+}
+
+.facebookIcon {
+  color: #4267b2; /* Brighter Facebook blue color */
+}
+
+.link {
+  color: #00ff00; /* Green links */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.link:hover {
+  color: #00cc00; /* Darker green on hover */
+}
