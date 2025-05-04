@@ -93,6 +93,13 @@
   padding: 0 1rem;
 }
 
+/* Ensure the section is visible before animation starts */
+.services[data-aos] {
+  opacity: 1; /* Ensure the section is visible */
+  transform: translateY(0); /* Prevent initial offset */
+  transition: none; /* Disable transition before animation starts */
+}
+
 /* Responsive Design */
 @media (max-width: 862px) {
   .title {

@@ -12,7 +12,7 @@ const items = [
 ];
 
 const Services: React.FC = () => (
-  <section id="services" className={styles.services}>
+  <section id="services" className={styles.services} data-aos="fade-up">
     <div className={styles.content}>
       <h2 className={styles.title}>Our Services</h2>
       <p className={styles.subtitle}>
@@ -21,7 +21,7 @@ const Services: React.FC = () => (
       </p>
       <div className={styles.grid}>
         {items.map((item, i) => (
-          <div key={i} className={styles.item}>
+          <div key={i} className={styles.item} data-aos="zoom-in">
             <img src={item.src} alt={item.alt} className={styles.image} />
             <div className={styles.overlay}>
               <p className={styles.overlayText}>{item.alt}</p>

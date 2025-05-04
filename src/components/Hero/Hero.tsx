@@ -6,7 +6,7 @@ import styles from "./Hero.module.css";
 const Hero: React.FC = () => (
   <section id="home" className={styles.hero}>
     <div className={styles.content}>
-      <div className={styles.text}>
+      <div className={styles.text} data-aos="fade-up" data-aos-duration="1000">
         <h1 className={styles.title}>
           Fast & Reliable <span className={styles.highlight}>Junk Removal</span>{" "}
           Services
@@ -24,7 +24,12 @@ const Hero: React.FC = () => (
           </a>
         </div>
       </div>
-      <div className={styles.imageContainer}>
+      <div
+        className={styles.imageContainer}
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="200"
+      >
         <img
           src={serviceImg}
           alt="Our Junk Removal Services"
